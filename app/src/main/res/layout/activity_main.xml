@@ -12,7 +12,10 @@
         android:layout_marginStart="26dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/v_flipper"
-        android:layout_marginLeft="26dp" />
+        android:layout_marginLeft="26dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
 
     <ScrollView
         android:layout_width="match_parent"
