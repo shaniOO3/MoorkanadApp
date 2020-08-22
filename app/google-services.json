@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "477524928921",
+    "firebase_url": "https://moorkanad-app-dc9ee.firebaseio.com",
+    "project_id": "moorkanad-app-dc9ee",
+    "storage_bucket": "moorkanad-app-dc9ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477524928921:android:cfcb661036853f07428b08",
+        "android_client_info": {
+          "package_name": "com.mjpcproject.moorkanadapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477524928921-hes3ti0drbmfhcasqs6cr41g2205lf2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvIQZrIcZOiF7ZCyUcAGK9b0M6AhAL7CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477524928921-hes3ti0drbmfhcasqs6cr41g2205lf2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
