@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">മൂര്‍ക്കനാട്</string>
+    <string name="developer_info">Developed By \n Computer Engineering students \n Majlis Polytechnic college</string>
+    <string name="moorkkanad_panchayth">മൂര്‍ക്കനാട് പഞ്ചായത്ത്</string>
+    <string name="welcome">സ്വാഗതം</string>
+    <string name="phone_no">ഫോൺ നമ്പർ</string>
+    <string name="enter_your_number_to_login">ലോഗിൻ ചെയ്യുന്നതിന് നിങ്ങളുടെ നമ്പർ നൽകുക</string>
+    <string name="generate_otp">OTP സൃഷ്ടിക്കുക</string>
+</resources>

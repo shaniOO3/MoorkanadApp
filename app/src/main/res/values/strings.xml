@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">മൂര്‍ക്കനാട്</string>
+    <string name="app_name">MOORKKANAD</string>
+    <string name="developer_info">Developed By \n Computer Engineering students \n Majlis Polytechnic college</string>
+    <string name="moorkkanad_panchayth">MOORKKANAD PANCHAYTH</string>
+    <string name="welcome">WELCOME</string>
+    <string name="phone_no">Phone No</string>
+    <string name="enter_your_number_to_login">Enter your number to login</string>
+    <string name="generate_otp">Generate OTP</string>
 </resources>
