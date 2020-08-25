@@ -4,15 +4,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -22,6 +21,8 @@ public class LoginPage extends AppCompatActivity {
     Locale locale;
     Button generateotp;
     TextView changelanguage;
+    EditText PhoneNo;
+    ProgressBar gbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,22 +30,48 @@ public class LoginPage extends AppCompatActivity {
         loadLocale();
         setContentView(R.layout.activity_login_page);
 
-        generateotp = findViewById(R.id.button2);
+        generateotp = findViewById(R.id.generateb);
         changelanguage = findViewById(R.id.changelang);
+        PhoneNo = findViewById(R.id.phone);
+        gbar = findViewById(R.id.progressBar1);
 
         if (locale.getLanguage().equals("en")){
 
-            changelanguage.setText("English");
+            changelanguage.setText("Malayalam");
 
         }
         else if (locale.getLanguage().equals("ml")){
 
-            changelanguage.setText("മലയാളം");
+            changelanguage.setText("English");
 
         }
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(getResources().getString(R.string.app_name));
+
+        generateotp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String phoneno = PhoneNo.getText().toString();
+
+                if (phoneno.isEmpty()){
+                    PhoneNo.setError("Please enter your number");
+                    PhoneNo.requestFocus();
+                }
+                else if (phoneno.length() != 10){
+                    PhoneNo.setError("Please enter a valid number");
+                    PhoneNo.requestFocus();
+                }
+                else {
+                    gbar.setVisibility(View.VISIBLE);
+                    Intent intent = new Intent(getApplicationContext(), OtpPage.class);
+                    intent.putExtra("PhoneNo", phoneno);
+                    startActivity(intent);
+                }
+
+            }
+        });
 
         changelanguage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,14 +86,12 @@ public class LoginPage extends AppCompatActivity {
 
         if (locale.getLanguage().equals("en")){
 
-            changelanguage.setText("മലയാളം");
             setLocale("ml");
             recreate();
 
         }
         else if (locale.getLanguage().equals("ml")){
 
-            changelanguage.setText("English");
             setLocale("en");
             recreate();
 

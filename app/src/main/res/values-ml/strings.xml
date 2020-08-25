@@ -7,4 +7,8 @@
     <string name="phone_no">ഫോൺ നമ്പർ</string>
     <string name="enter_your_number_to_login">ലോഗിൻ ചെയ്യുന്നതിന് നിങ്ങളുടെ നമ്പർ നൽകുക</string>
     <string name="generate_otp">OTP സൃഷ്ടിക്കുക</string>
+    <string name="verify_phone_no">ഫോൺ സ്ഥിരീകരിക്കുക</string>
+    <string name="enter_verification_code_if_failed_to_detect">കോഡ് കണ്ടെത്തുന്നതിൽ പരാജയപ്പെട്ടാൽ സ്ഥിരീകരണ കോഡ് നൽകുക</string>
+    <string name="verify">സ്ഥിരീകരിക്കുക</string>
+    <string name="otp">OTP</string>
 </resources>

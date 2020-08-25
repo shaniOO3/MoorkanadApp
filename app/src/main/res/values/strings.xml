@@ -6,4 +6,8 @@
     <string name="phone_no">Phone No</string>
     <string name="enter_your_number_to_login">Enter your number to login</string>
     <string name="generate_otp">Generate OTP</string>
+    <string name="verify_phone_no">VERIFY PHONE NO</string>
+    <string name="enter_verification_code_if_failed_to_detect">Enter verification code if failed to detect</string>
+    <string name="verify">VERIFY</string>
+    <string name="otp">OTP</string>
 </resources>
